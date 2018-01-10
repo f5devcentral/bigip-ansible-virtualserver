@@ -1,0 +1,15 @@
+username: "admin"
+password: "admin"
+
+pool_name: "web-pool"
+
+vip_name: "http_virtual_server"
+vip_port: "80"
+vip_ip: "10.168.68.143"
+
+pool_members:
+- port: "80"
+  host: "192.168.68.160"
+- port: "80"
+  host: "192.168.68.161"
+
