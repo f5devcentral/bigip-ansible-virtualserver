@@ -5,7 +5,7 @@
       password: "{{ password }}"
       host: "{{item.host}}"
       name: "{{item.host}}"
-      validate_certs: "no"
+      validate_certs: False
     with_items: "{{pool_members}}"
     delegate_to: localhost
 
@@ -19,6 +19,7 @@
       monitors: "/Common/http"
       monitor_type: "and_list"
       quorum: 1
+      validate_certs: False
     delegate_to: localhost
 
   - name: Add Pool members
