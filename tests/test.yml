@@ -3,4 +3,4 @@
   hosts: bigip
   gather_facts: false
   roles:
-  - { role: http_service }
+  - { role: f5devcentral.bigip-ansible-virtualserver }
