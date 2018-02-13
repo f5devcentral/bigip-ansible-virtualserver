@@ -17,8 +17,6 @@
       name: "{{pool_name}}"
       lb_method: "round-robin"
       monitors: "/Common/http"
-      monitor_type: "and_list"
-      quorum: 1
       validate_certs: False
     delegate_to: localhost
 
